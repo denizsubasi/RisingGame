@@ -13,5 +13,11 @@ public class Player : MonoBehaviour {
         {
             rb.velocity = Vector2.up * yukselmegucu;
         }
+
+        if ((int)transform.position.y == -30)
+        {
+
+            FindObjectOfType<GameManager>().EndGame();
+        }
 	}
 }
